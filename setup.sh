@@ -1,6 +1,6 @@
 #!/bin/bash
 
-S3="daedaedae"
+S3="deadeadea"
 PROJECT="/home/ubuntu/app"
 REPO="https://github.com/Loneth/CLOUD-Tugas4"
 
@@ -38,7 +38,7 @@ git clone "${REPO}" temp
 cp -pRn temp/. .
 rm -rf temp
 
-aws s3 cp "s3://${S3}/private/tugas3.env" .env
+aws s3 cp "s3://${S3}/private/tugas4.env" .env
 
 find "$PROJECT" -type d -exec chmod 777 {} \;
 find "$PROJECT" -type f -exec chmod 777 {} \;
