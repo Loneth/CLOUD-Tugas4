@@ -43,4 +43,6 @@ aws s3 cp "s3://${S3}/private/tugas4.env" .env
 find "$PROJECT" -type d -exec chmod 777 {} \;
 find "$PROJECT" -type f -exec chmod 777 {} \;
 
+docker compose up -d
+
 echo "done"
